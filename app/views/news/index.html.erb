@@ -1,8 +1,26 @@
 
+
 <div class="container">
-  <div class="jumbotron">
-    <h1>Discover Best News Ever</h1>
-    <p class="lead">Best News Ever</p>
-    <p><a class="btn btn-lg btn-success" href="#" role="button">News</a></p>
+<h1 class="text-center"> Welcome to News Feed Review App </h1>
+
+  <div class="row">
+    <div class="news-index">
+      <% @news.each do |news| %>
+      <div class="col-xs-18 col-sm-6 col-md-3">
+        <div class="thumbnail">
+
+
+          <div class="caption">
+            <h4> <%= news.title %> </h4>
+            <p><%= news.url %></p>
+          </div>
+          <%= link_to 'Create a review', new_news_review_path(news) %>
+          <%= link_to 'See reviews', news_path(news) %>
+
+        </div>
+      </div>
+      <%end%>
+    </div>
   </div>
+<%= link_to 'Create a news', new_news_path %>
 </div>

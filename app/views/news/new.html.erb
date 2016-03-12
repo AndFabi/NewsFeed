@@ -1,0 +1,12 @@
+<div class="container">
+  <h3>Create A news</h3>
+
+  <div class="row">
+    <%= simple_form_for @news do |f| %>
+      <%= f.input :title, label: 'title', error: 'Title is mandatory, please specify one' %>
+      <%= f.input :url, label: 'enter link' %>
+
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>
