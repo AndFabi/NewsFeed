@@ -31,6 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'better_errors', '~> 2.1', '>= 2.1.1'
 gem 'angularjs-rails', '~> 1.5'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'simple_form'

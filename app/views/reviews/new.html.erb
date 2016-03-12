@@ -1,0 +1,11 @@
+<div class="container">
+  <h3>Create a review</h3>
+
+  <div class="row">
+    <%= simple_form_for [@news, @review] do |f| %>
+      <%= f.input :content, label: 'Enter your review', error: 'review is mandatory, please specify one' %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>
+
